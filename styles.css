@@ -4,6 +4,9 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-lightBrown: #d1b3a2;
+  --cg-darkGreen: #38572c;
+  --cg-lightGreen: #608851;
 }
 
 html {
@@ -11,7 +14,8 @@ html {
 }
 
 body {
-  background: var(--cg-grey);
+  color: #3e3e3e; /* Dark brown text color */
+  background-color: #c5bbae; /* Light brown background color */
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -34,7 +38,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: var(--cg-black);
+  background-color: var(--cg-darkGreen); /* Medium green navigation bar background color */
   color: var(--cg-white);
   padding: 0px 0px;
 
@@ -64,12 +68,13 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  background-color: var(--cg-lightGreen); /* Dark green on hover */
+  color: var(--cg-lightbrown);
   text-decoration: underline;
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color: var(--cg-lightbrown);
 }
 
 .logo a {
@@ -215,7 +220,7 @@ main {
 }
 
 .button:hover {
-  background-color: var(--cg-blue);
+  background-color: var(--cg-lightbrown);
 }
 
 .resume h2 {
@@ -255,8 +260,8 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
-  color: var(--cg-white);
+  background-color: #c5bbae; /* Light brown footer background color */
+  color: #3e3e3e; /* Dark brown footer text color */
   position: absolute;
   bottom: 0;
   width: 100%;
